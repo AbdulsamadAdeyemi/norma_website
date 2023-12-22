@@ -1,0 +1,295 @@
+:root {
+    --black1: rgba(0, 0, 0, 0.8);
+    --balck2: rgba(0, 0, 0, 0.6);
+    --white1: rgba(255, 255, 255, 0.9);
+    --white2: rgba(255, 255, 255, 0.9);
+    --maincolor: rgb(155, 8, 86);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.navbarlogo {
+    width: 20%;
+}
+
+.logo {
+    width: 40%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    width: 45%;
+    justify-content: space-between;
+}
+
+ul li {
+    padding: .5em 1em;
+
+}
+
+ul a {
+    text-decoration: none;
+    color: var(--black1);
+    font-size: 1.1rem;
+}
+
+.rightside {
+    width: 10%;
+}
+
+.btn {
+    padding: .5em 1em;
+    color: var(--black1);
+    font-weight: 300;
+    border: 1px solid var(--maincolor);
+    background-color: transparent;
+    box-shadow: -1px -1px -3px lightgray;
+}
+
+#menu_bar {
+    display: none;
+}
+
+.line {
+    height: 2px;
+    background-color: var(--black1);
+    width: 3%;
+    position: absolute;
+    top: 25px;
+    right: 10px;
+}
+
+.two {
+    top: 31px;
+}
+
+.three {
+    top: 37px;
+}
+
+.maincontainer {
+    height: 90vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6));
+    background-image: url(../images/mac.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: var(--white2);
+    text-align: center;
+
+}
+
+.maincontainertext {
+    padding: 8em 0;
+
+}
+
+.title {
+    font-family: cursive;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.heading {
+    color: var(--maincolor);
+    text-shadow: -1px 0 var(--white1), 0 1px var(--white1);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.maincontainertext p {
+    width: 50%;
+    margin: 1em auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.maincontainerbutton {
+    margin-top: 2em;
+}
+
+.btnwhite {
+    border: 2px double var(--white1);
+    color: var(--white2);
+    padding: .3em 1.2em;
+    font-size: 1.1rem;
+    transition: all .5s ease-in;
+}
+
+.btnwhite:hover {
+    background: var(--white2);
+    color: var(--black1);
+    border: 2px double var(--maincolor);
+    cursor: pointer;
+}
+
+.cardcontainer {
+    margin-top: 1em;
+}
+
+.cards {
+    display: flex;
+    margin: 1.5em 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 25%;
+    box-shadow: -2px -2px 10px lightgray;
+    transition: transform .5s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.textblog {
+    padding: .5em 0 .5em .5em;
+}
+
+.textblog {
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+.textblog p {
+    font-weight: 100;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: .9rem;
+}
+
+.btnblog {
+    margin: .5em 0;
+    border: 1px sold var(--maincolor);
+    font-weight: bold;
+    font-size: .9rem;
+    transition: all .5s ease-in;
+}
+
+.btnblog:hover {
+    background-color: var(--maincolor);
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.articlecard {
+    width: 90%;
+    margin: 1.5em auto;
+    display: flex;
+    align-items: center;
+}
+
+.articlecard img {
+    width: 30%;
+}
+
+.teachercards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 3.5em 0 2em;
+
+}
+
+.teachercard {
+    width: 20%;
+    text-align: center;
+    padding: 0.5em;
+    box-shadow: -2px -2px 10px lightgray;
+}
+
+.aboutteacher p {
+    margin: .8em 0;
+}
+
+.teachercard img {
+    width: 50%;
+    object-fit: contain;
+    border-radius: 50%;
+    display: block;
+    margin: -3.5em auto 0;
+
+}
+
+.btnteacher {
+    font-size: .9em;
+    border: 1px solid var(--maincolor);
+    cursor: pointer;
+}
+
+.enrollcard {
+    text-align: center;
+    padding: 1em;
+}
+
+.enrollcard .fas,
+.enrollcard .fab {
+    color: var(--maincolor);
+    font-size: 4rem;
+}
+
+.footercontainer {
+    background-color: var(--black1);
+    color: var(--white1);
+    margin-top: 2em;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.5em 0;
+    flex-wrap: wrap;
+}
+
+.footerleft p {
+    font-size: 1.1rem;
+}
+
+.footermiddle p {
+    margin: .5em 0;
+}
+
+.footermiddle hr {
+    width: 50%;
+    margin: .2em auto;
+}
+
+.footerright h1 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app {
+    text-align: center;
+    margin: 1em 0;
+}
+
+.app .fab {
+    color: var(--maincolor);
+    font-size: 2rem;
+    margin-left: .5em;
+}
+
+.copyright {
+    text-align: center;
+    padding-bottom: .4rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
